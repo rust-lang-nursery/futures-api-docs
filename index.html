@@ -11,13 +11,17 @@
       body {
         padding: 10px;
         font-family: sans-serif;
+        background: radial-gradient(farthest-corner, #4b79a1, #493c7a);
+        min-height: 100vh;
+        box-sizing: border-box;
       }
 
       h1 {
-        color: #F03E0E;
+        color: white;
       }
 
       main {
+        background: white;
         border: 1px solid #eee;
         margin: 60px auto 0;
         max-width: 400px;
@@ -47,6 +51,7 @@
         font-weight: bold;
         white-space: nowrap;
         position: relative;
+        z-index: 0;
       }
 
       main > a > span::after {
@@ -63,6 +68,17 @@
         transform: scaleX(1);
       }
     </style>
+
+    <script>
+      // If URL ends in '#latest', automatically redirect
+      function onHashChange () {
+        if (window.location.hash === '#latest') {
+          document.querySelector('#doc-links > a').click()
+        }
+      }
+      window.addEventListener('hashchange', onHashChange)
+      window.addEventListener('load', onHashChange)
+    </script>
   </head>
   <body>
     <p align="center">
@@ -74,7 +90,7 @@
     </h1>
 
 
-    <main>
+    <main id="doc-links">
         <a href="https://rust-lang-nursery.github.io/futures-doc/0.3.0-alpha.2/futures/">
           <span>0.3.0-alpha.2</span>
         </a>
