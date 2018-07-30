@@ -1,6 +1,34 @@
 <!doctype html>
 <html>
-  <head>
+  <body>
+    <p align="center">
+      <img alt="futures-rs" src="https://raw.githubusercontent.com/rust-lang-nursery/futures-rs/gh-pages/assets/images/futures-rs-logo.svg?sanitize=true" width="400">
+    </p>
+
+    <h1 align="center">
+      API Docs
+    </h1>
+
+    <main id="doc-links">
+        <a href="https://rust-lang-nursery.github.io/futures-doc/0.3.0-alpha.2/futures/">
+          <span>0.3.0-alpha.2</span>
+        </a>
+        <a href="https://rust-lang-nursery.github.io/futures-doc/0.3.0-alpha.1/futures/">
+          <span>0.3.0-alpha.1</span>
+        </a>
+    </main>
+
+    <script>
+      // If URL ends in '#latest', automatically redirect
+      function onHashChange () {
+        if (window.location.hash === '#latest') {
+          document.querySelector('#doc-links > a').click()
+        }
+      }
+      window.addEventListener('hashchange', onHashChange)
+      onHashChange()
+    </script>
+
     <style>
       html,
       body {
@@ -68,36 +96,6 @@
         transform: scaleX(1);
       }
     </style>
-
-    <script>
-      // If URL ends in '#latest', automatically redirect
-      function onHashChange () {
-        if (window.location.hash === '#latest') {
-          document.querySelector('#doc-links > a').click()
-        }
-      }
-      window.addEventListener('hashchange', onHashChange)
-      window.addEventListener('load', onHashChange)
-    </script>
-  </head>
-  <body>
-    <p align="center">
-      <img alt="futures-rs" src="https://raw.githubusercontent.com/rust-lang-nursery/futures-rs/gh-pages/assets/images/futures-rs-logo.svg?sanitize=true" width="400">
-    </p>
-
-    <h1 align="center">
-      API Docs
-    </h1>
-
-
-    <main id="doc-links">
-        <a href="https://rust-lang-nursery.github.io/futures-doc/0.3.0-alpha.2/futures/">
-          <span>0.3.0-alpha.2</span>
-        </a>
-        <a href="https://rust-lang-nursery.github.io/futures-doc/0.3.0-alpha.1/futures/">
-          <span>0.3.0-alpha.1</span>
-        </a>
-    </main>
   </bod>
 </html>
 
