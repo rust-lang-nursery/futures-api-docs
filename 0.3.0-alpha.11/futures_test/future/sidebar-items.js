@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["FutureTestExt","Additional combinators for testing futures."]]});
