@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["InterleavePending","Wrapper that interleaves [`Poll::Pending`] in calls to poll."],["Limited","I/O wrapper that limits the number of bytes written or read on each call."]],"trait":[["AsyncReadTestExt","Additional combinators for testing async readers."]]});
