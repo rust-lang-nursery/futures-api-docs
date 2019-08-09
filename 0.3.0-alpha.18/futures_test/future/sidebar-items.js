@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["AssertUnmoved","Combinator for the `FutureTestExt::assert_unmoved` method."],["InterleavePending","Wrapper that interleaves [`Poll::Pending`] in calls to poll."],["PendingOnce","Combinator that guarantees one [`Poll::Pending`] before polling its inner future."]],"trait":[["FutureTestExt","Additional combinators for testing futures."]]});
